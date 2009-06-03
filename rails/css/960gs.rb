@@ -1,6 +1,6 @@
-file_location_960 = "http://github.com/nathansmith/960-grid-system/raw/cba77b87b377e7259dd4de3b15483087f081dfea/code/css/960.css"
-file_location_reset = "http://github.com/nathansmith/960-grid-system/raw/cba77b87b377e7259dd4de3b15483087f081dfea/code/css/reset.css"
-file_location_text = "http://github.com/nathansmith/960-grid-system/raw/cba77b87b377e7259dd4de3b15483087f081dfea/code/css/text.css"
+file_location_960 = "http://github.com/nathansmith/960-grid-system/raw/master/code/css/960.css"
+file_location_reset = "http://github.com/nathansmith/960-grid-system/raw/master/code/css/reset.css"
+file_location_text = "http://github.com/nathansmith/960-grid-system/raw/master/code/css/text.css"
 unless File.exists?('public/stylesheets/960.css')
   begin
     file 'public/stylesheets/960.css' do
