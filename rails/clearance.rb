@@ -5,10 +5,9 @@ rake("db:migrate")
 
 if yes?("Add Cucumber features? (yes/no)")
   generate("clearance_features")
-  RAILS_ENV = 'test'
-  gem 'webrat', :version => '= 0.4.4'
-  gem 'cucumber', :version => '= 0.3.0'
-  gem 'thoughtbot-factory_girl', :lib     => 'factory_girl', :source  => "http://gems.github.com", :version => '1.2.1'
+  gem 'webrat', :version => '= 0.4.4', :env => 'test'
+  gem 'cucumber', :version => '= 0.3.0', :env => 'test'
+  gem 'thoughtbot-factory_girl', :lib     => 'factory_girl', :source  => "http://gems.github.com", :version => '1.2.1', :env => 'test'
   run('sudo gem install nokogiri')
 end
 
